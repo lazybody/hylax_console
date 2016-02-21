@@ -1,0 +1,23 @@
+<div id="console-list">
+    <ul id="doc_nav" ng-repeat="item in catalog" class="nav nav-stacked nav-stacked-active nav-pill catalog">
+        <li class="nav-pill-border nav-pill-show" ng-class="{'nav-first-item':$index==0}"
+            ng-click="selectCatelog(item)">
+            <p class="catalog-item-name">{{item.name}}</p>
+            <ul class="nav nav-stacked nav-stacked-active nav-pill nav-1 catalog-item"
+                ng-class="{'show':selectCatalog==item.name||showCatelog==item.name}">
+                <li ng-repeat="contentItem in item.content" class="nav-pill-border nav-pill-show content-item"
+                    ng-class="{'active':selectItem==contentItem.url}" ng-click="goTo(item,contentItem);$event.stopPropagation();">
+                    <img class="nav-point" src="../../image/bannar-point.png" alt="">
+
+                    <p class="content-item-name">{{contentItem.title}}</p>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div ui-view></div>
+
+<script>
+    $('#member').tab('show');
+    console.log("member")
+</script>

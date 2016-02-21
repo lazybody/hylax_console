@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="hylaxApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.8,maximum-scale=1.0,user-scalable=no">
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <title>Hylax</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">-->
+    <link rel="stylesheet" href="framework/bootstrap.css">
+    <link rel="stylesheet" href="framework/angularjs-toaster/toaster.css">
+
+    <link  href="css/index.css" rel="stylesheet" type="text/css" />
+    <link  href="css/sidebar.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="console-header">
+    <nav class="navbar  navbar-fixed-top">
+        <div class="container-fluid">
+            <a href="" target="_blank"><img class="logo-top" src="image/logo-beta.png" alt=""></a>
+            <ul class="nav navbar-nav navbar-nav-active">
+                <li id="member" style="width: 32px"><a href="#/member" data-target="#member">会员</a></li>
+
+                <li id="merchant" style="width: 60px"><a href="#/merchant" data-target="#merchant">商家管理</a></li>
+                <li id="marketing" style="width: 60px"><a href="#/marketing" data-target="#marketing">营销管理</a></li>
+                <li id="user" style="width: 60px"><a href="#/user" data-target="#user">用户管理</a></li>
+
+                <li id="__nav_hide" style="width:1px;height:1px; overflow:hidden;"></li>
+
+            </ul>
+
+        </div>
+    </nav>
+</div>
+<div class="console-body">
+    <div ui-view></div>
+    <toaster-container></toaster-container>
+</div>
+
+<script type="text/javascript" src="framework/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="bower_components/underscore/underscore-min.js"></script>
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="framework/ui-bootstrap-tpls.js"></script>
+<script type="text/javascript" src="framework/angularjs-toaster/toaster.js"></script>
+
+<script type="text/javascript" src="javascript/app.js"></script>
+<script type="text/javascript" src="javascript/routers.js"></script>
+<script type="text/javascript" src="javascript/controllers/memberCtrl.js"></script>
+
+</body>
+</html>

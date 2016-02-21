@@ -1,0 +1,5 @@
+/node_modules/
+/.idea/
+/log/access.log
+/public/bower_components/
+/app/config/local/*.js

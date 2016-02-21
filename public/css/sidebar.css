@@ -1,0 +1,59 @@
+#list-menu {
+    width: 200px;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Microsoft Yahei", "Î¢ÈíÑÅºÚ", Arial, STHeiti;
+    font-size: 14px;
+    line-height: 1.42857143;
+    position: fixed;
+    background-color: #283343;
+}
+
+#list-menu ul {
+    padding: 0;
+}
+
+.content-item:hover {
+    background-color: #303e4e;;
+}
+
+.catalog-item-name{
+    color: #8e96a4;
+}
+.catalog-item-name:hover {
+    background-color: #3e4a5e;
+}
+
+.content-item {
+    height: 40px;
+    line-height: 40px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.content-item > p {
+    padding-left: 69px;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.catalog ul {
+    margin-bottom: 0;
+}
+
+.catalog-item-name {
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    padding-left: 50px;
+    margin-bottom: 0;
+}
+
+.catalog-item .active {
+    background-color: #3e4a5e;
+    color: #ffffff;
+    list-style-type: none;
+}
